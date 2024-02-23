@@ -1,1 +1,84 @@
 // страница home
+
+.explore {
+
+    // .explore__slider
+
+    &__slider {}
+
+    // .explore__wrapper
+
+    &__wrapper {}
+
+    // .explore__slide
+
+    &__slide {}
+
+    // .explore__body
+
+    &__body {
+        display: flex;
+        background-color: #F4F6F5;
+        border-radius: 59px;
+        padding: 77px 81px 0px 119px;
+    }
+
+    // .explore__main
+
+    &__main {
+        flex: 1 0 650px;
+    }
+
+    // .explore__title
+
+    &__title {
+        font-size: 96px;
+        font-weight: 900;
+        line-height: 1.25;
+
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+
+    // .explore__sub-title
+
+    &__sub-title {
+        font-size: 22px;
+
+        &:not(:last-child) {
+            margin-bottom: 48px;
+        }
+    }
+
+    // .explore__button
+
+    &__button {
+        display: inline-block;
+        margin-bottom: 90px;
+    }
+
+    // .explore__picture
+
+    &__picture {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.swiper {}
+
+.swiper-wrapper {}
+
+
+.swiper-slide {}
+
+.rectangle {}
+
+.white {}
+
+.yellow {}

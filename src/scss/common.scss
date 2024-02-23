@@ -10,11 +10,11 @@
 // Элементы формы
 
 .button {
-    padding: 11px 21px 12px 21px;
+    padding: 19px 40px;
     background-color: #000;
     color: #fff;
     border-radius: 7px;
-    font-size: 24px;
+    font-size: 30px;
     line-height: math.div(36, 22);
     transition: all 0.2s ease;
 
@@ -37,6 +37,34 @@
     &:active {
         background-color: #f3cc20;
         transform: translateY(2px);
+    }
+}
+
+.decor-star {
+    position: absolute;
+
+    width: 58px;
+    height: 56px;
+    background: url('../img/star.svg') 0 0 no-repeat;
+
+    &__one {
+        top: 0;
+        left: -20px;
+    }
+
+    &__two {
+        top: 36px;
+        right: 157px;
+    }
+
+    &__three {
+        right: 2px;
+        bottom: 92px;
+    }
+
+    &__four {
+        left: 23px;
+        bottom: 34px;
     }
 }
 

@@ -8,10 +8,39 @@
     <div class="wrapper">
         @@include('html/header.html', {})
         <main class="page">
+            <div class="explore__slider swiper __container">
+                <div class="explore__wrapper swiper-wrapper ">
+                    <div class="explore__slide swiper-slide">
+                        <div class="explore__body">
+                            <div class="explore__main">
+                                <div class="explore__title">
+                                    <span class="rectangle white">LET’S</span><br>
+                                    EXPLORE<br>
+                                    <span class="rectangle yellow">UNIQUE</span><br>
+                                    CLOTHES.
+                                </div>
+                                <div class="explore__sub-title">
+                                    Live for Influential and Innovative fashion!
+                                </div>
+                                <a href="#" class="button explore__button">Shop Now</a>
+                            </div>
 
-        </main>
-        @@include('html/footer.html', {})
-        <script src="js/app.min.js"></script>
+                            <div class="explore__picture">
+                                <img src="@img/header/slider/woman.png" alt="">
+                                <div class="decor-star decor-star__one"></div>
+                                <div class="decor-star decor-star__two"></div>
+                                <div class="decor-star decor-star__three"></div>
+                                <div class="decor-star decor-star__four"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explore__slide swiper-slide">slide 2</div>
+                </div>
+            </div>
+    </div>
+    </main>
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
     </div>
 </body>
 
