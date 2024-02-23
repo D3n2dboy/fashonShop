@@ -4,5 +4,4 @@ dist/
 gulpfile.js
 package.json
 package-lock.json
-readme.txt
 node_modules
