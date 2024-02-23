@@ -7,7 +7,7 @@ import * as d3nFunctions from "./modules/functions.js"; // Подключени�
 d3nFunctions.isWebp();
 
 // Модуль для работы с меню (Бургер) (раскоментировать если нужен не забыть стили в header.scss)
-//d3nFunctions.menuInit();
+d3nFunctions.menuInit();
 
 
 // Swiper - hz что тут рабочее
