@@ -19,8 +19,8 @@
     transition: all 0.2s ease;
 
     @media (max-width:1394.98px) {
-        font-size: 18px;
-        padding: 5px 16px 6px 16px;
+        font-size: 20px;
+        padding: 10px 20px;
     }
 
     /*срабатывает при клике пили переходе на tab */
@@ -42,29 +42,31 @@
 
 .decor-star {
     position: absolute;
-
-    width: 58px;
-    height: 56px;
+    width: 6.66%;
+    height: 6.6%;
     background: url('../img/star.svg') 0 0 no-repeat;
+    background-size: contain;
 
     &__one {
-        top: 0;
-        left: -20px;
+        top: 9.8%;
+        left: -2.3%;
     }
 
+    //871
+
     &__two {
-        top: 36px;
-        right: 157px;
+        top: 14.4%;
+        right: 18%;
     }
 
     &__three {
-        right: 2px;
-        bottom: 92px;
+        right: 0.3%;
+        bottom: 11.7%;
     }
 
     &__four {
-        left: 23px;
-        bottom: 34px;
+        left: 2.6%;
+        bottom: 4.3%;
     }
 }
 

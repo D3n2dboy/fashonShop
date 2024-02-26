@@ -15,7 +15,7 @@ d3nFunctions.menuInit();
 //import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Parallax } from 'swiper/modules';
 // import Swiper and modules styles
 import 'swiper/css';
 // Стили Swiper
@@ -35,9 +35,12 @@ function initSliders() {
         new Swiper('.swiper', { // Указываем скласс нужного слайдера
             // Подключаем модули слайдера
             // для конкретного случая
-            modules: [Navigation, Pagination],
+            modules: [Navigation, Pagination, Parallax],
             autoHeight: false,
             speed: 600,
+            parallax: true,
+            grabCursor: true,
+            spaceBetween: 50,
 
             autoplay: {
                 delay: 4000,
