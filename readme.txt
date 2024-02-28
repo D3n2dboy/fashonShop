@@ -15,6 +15,17 @@ npm i -D webp-converter@2.2.3 --save-dev
 ###   npm runsvgSprive  ###   Создать SVG спрайты npm run 
 ###########################
 
+##########################
+НЕ ДОБАВЛЕНО в основоной шаблон
+
+package.json
+"homepage": "https://d3n2dboy.github.io/fashonShop",  ///  указать репозиторий для выгрузки gh pages
+"scripts": {
+    "devn": "gulp --nowebp",  // разработка без web-p изображений
+    "deploypages": "gh-pages -d dist",  // не забыть установить модуль  npm i gh-pages -D // запустить выгрузку на ghpages  npm run deploypages
+ }
+ #############################
+
 
 ###########################
 ###         GIT         ###   Установка и настройка GIT 
@@ -44,6 +55,12 @@ git config --global user.email d3n2dboy@gmail.com   Задаь email  (без ф
 ### git add .           ###  Добавить к отслеживанию
 ### git commit -m "Update index.html"  ### Создаем коммит
 ### git push            ###  Загрузить изменения на github
+### git stash           ###  Сохоранить в кеш (на локалке) изменения чтобы поработать с другими комитами
+### git stash pop       ###  Вернуть из кеша свои данные
+### git reset --hard    ###  Удалить все незакомиченые данные
+
+tig - прога для просмотра комитов из консоли
+
 ###########################
 
 ### git log             ###  Посмотреть коммиты

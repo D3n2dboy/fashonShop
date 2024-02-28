@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/head.html', {
-"title":"Главная"
-})
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
 
 <body>
     <div class="wrapper">
-        @@include('html/header.html', {})
+        <header class="header">
+    <div class="header__container">
+        <div class="header__body">
+            <a href="/" class="header__logo">
+                <span>FASHION</span>
+            </a>
+            <div class="header__menu menu">
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="" class="menu__link">CATALOGUE</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">FASHION</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">FAVOURITE</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">LIFESTYLE</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="#" class="button header__button">SIGN UP</a>
+            <button type="button" class="menu__icon icon-menu"><span></span></button>
+        </div>
+    </div>
+</header>
         <main class="page">
 
             <div class="explore">
@@ -34,7 +58,7 @@
                                         <div data-swiper-parallax="-300" class="decor-star decor-star__two"></div>
                                         <div data-swiper-parallax="-200" class="decor-star decor-star__three"></div>
                                         <div data-swiper-parallax="-100" class="decor-star decor-star__four"></div>
-                                        <img data-swiper-parallax="-200" src="@img/header/slider/woman.png" alt="">
+                                        <picture><source srcset="img/header/slider/woman.webp" type="image/webp"><img data-swiper-parallax="-200" src="img/header/slider/woman.png" alt=""></picture>
 
                                     </div>
                                 </div>
@@ -60,7 +84,7 @@
                                         <div data-swiper-parallax="-300" class="decor-star decor-star__two"></div>
                                         <div data-swiper-parallax="-200" class="decor-star decor-star__three"></div>
                                         <div data-swiper-parallax="-100" class="decor-star decor-star__four"></div>
-                                        <img data-swiper-parallax="-200" src="@img/header/slider/header-photo.jpg"
+                                        <img data-swiper-parallax="-200" src="img/header/slider/header-photo.jpg"
                                             alt="">
 
                                     </div>
@@ -76,37 +100,39 @@
                 <div class="partners__container">
                     <div class="partners__items">
                         <a href="#" class="partners__link">
-                            <img src="@img/partners/01.png" alt="hj">
+                            <picture><source srcset="img/partners/01.webp" type="image/webp"><img src="img/partners/01.png" alt="hj"></picture>
                         </a>
 
                         <a href="#" class="partners__link">
-                            <img src="@img/partners/02.png" alt="hj">
+                            <picture><source srcset="img/partners/02.webp" type="image/webp"><img src="img/partners/02.png" alt="hj"></picture>
                         </a>
 
                         <a href="#" class="partners__link">
-                            <img src="@img/partners/03.png" alt="hj">
+                            <picture><source srcset="img/partners/03.webp" type="image/webp"><img src="img/partners/03.png" alt="hj"></picture>
                         </a>
 
                         <a href="#" class="partners__link">
-                            <img src="@img/partners/04.png" alt="hj">
+                            <picture><source srcset="img/partners/04.webp" type="image/webp"><img src="img/partners/04.png" alt="hj"></picture>
                         </a>
 
                         <a href="#" class="partners__link">
-                            <img src="@img/partners/05.png" alt="hj">
+                            <picture><source srcset="img/partners/05.webp" type="image/webp"><img src="img/partners/05.png" alt="hj"></picture>
                         </a>
 
                         <a href="#" class="partners__link">
-                            <img src="@img/partners/06.png" alt="hj">
+                            <picture><source srcset="img/partners/06.webp" type="image/webp"><img src="img/partners/06.png" alt="hj"></picture>
                         </a>
 
                         <a href="#" class="partners__link">
-                            <img src="@img/header/slider/header-photo.jpg" alt="hj">
+                            <picture><source srcset="img/header/slider/header-photo.webp" type="image/webp"><img src="img/header/slider/header-photo.jpg" alt="hj"></picture>
                         </a>
                     </div>
                 </div>
             </div>
         </main>
-        @@include('html/footer.html', {})
+        <footer class="footer">
+    d3n2dboy
+</footer>
         <script src="js/app.min.js"></script>
     </div>
 </body>

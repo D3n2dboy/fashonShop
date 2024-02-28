@@ -1,5 +1,6 @@
 gulp/
-dist/
+##src/
+dist
 
 gulpfile.js
 package.json
