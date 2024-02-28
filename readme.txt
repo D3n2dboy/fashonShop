@@ -15,6 +15,17 @@ npm i -D webp-converter@2.2.3 --save-dev
 ###   npm runsvgSprive  ###   Создать SVG спрайты npm run 
 ###########################
 
+##########################
+НЕ ДОБАВЛЕНО в основоной шаблон
+
+package.json
+"homepage": "https://d3n2dboy.github.io/fashonShop",  ///  указать репозиторий для выгрузки gh pages
+"scripts": {
+    "devn": "gulp --nowebp",  // разработка без web-p изображений
+    "deploypages": "gh-pages -d dist",  // не забыть установить модуль  npm i gh-pages -D // запустить выгрузку на ghpages  npm run deploypages
+ }
+ #############################
+
 
 ###########################
 ###         GIT         ###   Установка и настройка GIT 
