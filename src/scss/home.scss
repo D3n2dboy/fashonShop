@@ -1,154 +1,11 @@
 // страница home
 
-// .explore {
-
-//     // .explore__slider
-
-//     &__slider {}
-
-//     // .explore__wrapper
-
-//     &__wrapper {}
-
-//     // .explore__slide
-
-//     &__slide {
-//         background-color: #F4F6F5;
-//         border-radius: 59px;
-//     }
-
-//     // .explore__body
-
-//     &__body {
-//         position: relative;
-//         display: flex;
-
-//     }
-
-//     // .explore__main
-
-//     &__main {
-//         flex: 0 1 49.4%;
-//         z-index: 3;
-//         padding: 77px 0 77px 119px;
-
-//         @media (max-width:1512px) {
-//             padding: 50px 0 50px 80px;
-//         }
-
-//         @media (max-width:1282.98px) {
-//             padding-left: 60px;
-//             padding-right: 20px;
-//         }
-
-//         @media (max-width:$tablet) {
-//             padding: 20px 40px;
-//         }
-
-//         @media (max-width:$mobile) {
-//             flex: 0 1 auto;
-//         }
-
-//     }
-
-//     // .explore__title
-
-//     &__title {}
-
-//     // .explore__sub-title
-
-//     &__sub-title {}
-
-//     // .explore__button
-
-//     &__button {
-//         display: inline-block;
-//         margin-bottom: 90px;
-//     }
-
-//     // .explore__picture
-
-//     &__picture {
-//         position: relative;
-//         width: 50.639%;
-//         flex: 1 0 50.6%;
-//         margin: 68px 80px 0 0;
-
-//         @media (max-width:1512.98px) {
-//             margin: 50px 50px 0 0;
-//         }
-
-//         @media (max-width:1282.98px) {
-//             margin: 0;
-//         }
-
-//         @media (max-width:$tablet) {
-//             position: absolute;
-//             width: 100%;
-//             right: 0;
-//             top: 0;
-
-//             ::before {
-//                 content: "";
-//                 position: absolute;
-//                 width: 100%;
-//                 height: 100%;
-//                 background-color: #f4f6f51c;
-//                 z-index: 3;
-
-//             }
-//         }
-
-
-//         img {
-//             position: absolute;
-//             bottom: 0;
-//             right: 0;
-//             z-index: 2;
-//             //width: 100%;
-//             height: 100%;
-//             object-fit: contain;
-
-//             @media (max-width:1282.98px) {
-//                 position: relative;
-//             }
-
-//             @media (max-width:$tablet) {}
-//         }
-//     }
-// }
-
-// .fashion-slider {
-
-//     // .fashion-slider__container
-
-//     &__container {}
-
-//     // .fashion-slider__slider
-
-//     &__slider {}
-
-//     // .fashion-slider__wrapper
-
-//     &__wrapper {}
-
-//     // .fashion-slider__slide
-
-//     &__slide {}
-
-//     &__body {}
-
-//     // .fashion-slider__text
-
-//     &__text {}
-
-//     // .fashion-slider__picture
-
-//     &__picture {}
-// }
-
-
 .explore {
+    margin-bottom: 63px;
+
+    @media (max-width:$tablet) {
+        margin-bottom: 30px;
+    }
 
     // .explore__container
 
@@ -156,7 +13,13 @@
 
     // .explore__slider
 
-    &__slider {}
+    &__slider {
+        width: 100%;
+
+        @media (min-width:$mobile) {
+            max-height: 797px;
+        }
+    }
 
     // .explore__wrapper
 
@@ -167,6 +30,7 @@
     &__slide {
         background-color: #eee;
         border-radius: 20px;
+        overflow: hidden;
     }
 
     // .explore__body
@@ -304,33 +168,66 @@
 //
 
 .partners {
-    padding: 71px 61px 54px 71px;
+    padding: 51px 0 44px 0;
     background-color: #EBD96B;
+
+    @media (max-width:1394.98px) {
+        padding: 30px 0;
+    }
+
+    @media (max-width:$tablet) {
+        padding: 17px 0;
+    }
 
     // .partners__container
 
-    &__container {
-        padding: 0 71px;
+    &__container {}
+
+    // .partners__body
+
+    &__body {
+
+
+        @media (min-width:1720px) {
+            margin: 0 71px;
+        }
     }
 
     // .partners__items
 
     &__items {
         display: flex;
-        flex-wrap: wrap;
+        align-items: center;
         justify-content: center;
-        row-gap: 15px;
+        margin: 0 -20px;
+        flex-wrap: wrap;
+        row-gap: 20px;
+
+        @media (max-width:$mobile) {
+            row-gap: 10px;
+        }
     }
 
-    // .partners__link
+    // .partners__item
 
-    &__link {
-        flex: 1 0 262.8px;
-        text-align: center;
+    &__item {
+        flex: 1 0 235px;
+        padding: 0 20px;
+        margin: 5px 0;
+
+        @media (max-width:$mobile) {
+            flex: 1 0 160px;
+        }
 
         img {
+            width: 100%;
+            max-height: 69px;
+            object-fit: contain;
 
-            max-height: 53px;
+
+            @media (max-width:$mobile) {
+                max-height: 40px;
+            }
         }
     }
 }
