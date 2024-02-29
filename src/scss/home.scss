@@ -165,11 +165,10 @@
 
 // partners
 
-//
-
 .partners {
     padding: 51px 0 44px 0;
     background-color: #EBD96B;
+    margin-bottom: 69px;
 
     @media (max-width:1394.98px) {
         padding: 30px 0;
@@ -186,8 +185,6 @@
     // .partners__body
 
     &__body {
-
-
         @media (min-width:1720px) {
             margin: 0 71px;
         }
@@ -229,5 +226,144 @@
                 max-height: 40px;
             }
         }
+    }
+}
+
+
+// section arrivals
+
+.arrivals {
+    margin-bottom: 190px;
+
+    // .arrivals__title
+
+    &__title {
+        margin-bottom: 100px;
+
+        @media (max-width:1720px) {
+            margin-bottom: 50px;
+        }
+    }
+
+    // .arrivals__body
+
+    &__body {}
+
+    // .arrivals__items
+
+    &__items {
+        display: flex;
+        margin: 0 -45px;
+
+        @media (max-width:1720px) {
+            margin: 0 -25px;
+        }
+
+        @media (max-width:$tablet) {
+            overflow: auto;
+            margin: 0 -15px;
+        }
+
+
+    }
+
+    // .arrivals__item
+
+    &__item {
+        padding: 0 45px;
+        flex: 0 1 33.333%;
+        min-width: 300px;
+
+        @media (max-width:1720px) {
+            padding: 0 25px;
+        }
+
+        @media (max-width:$tablet) {
+            flex: 0 1 45%;
+            padding: 0 15px;
+        }
+
+        @media (max-width:$mobile) {
+            min-width: 90%;
+        }
+
+    }
+}
+
+.title {}
+
+.item-arrivals {
+
+    // .item-arrivals__picture
+
+    &__picture {
+        margin-bottom: 28px;
+        max-height: 704px;
+        object-fit: contain;
+        border-radius: 20px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // .item-arrivals__body
+
+    &__body {
+        display: flex;
+        //align-items: center;
+    }
+
+    // .item-arrivals__links
+
+    &__links {
+        flex: 1 1 auto;
+    }
+
+    // .item-arrivals__title-link
+
+    &__title-link {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 156%;
+        letter-spacing: -0.04em;
+        color: #191919;
+
+        &:not(:last-child) {
+            margin-bottom: 7px;
+        }
+
+        @media (max-width:1240px) {
+            font-size: 26px;
+        }
+    }
+
+    // .item-arrivals__subtitle-link
+
+    &__subtitle-link {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 208%;
+        letter-spacing: -0.04em;
+        color: #7f7f7f;
+
+        @media (max-width:1240px) {
+            font-size: 18px;
+        }
+    }
+
+    // .item-arrivals__arrow
+
+    &__arrow {
+        flex: 0 0 32px;
+        margin-top: 23px;
+        width: 32px;
+        height: 22px;
+        margin-left: 15px;
+        background: url('/img/arrov-right.svg') 0 0 no-repeat;
+        background-size: cover;
     }
 }
