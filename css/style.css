@@ -227,6 +227,40 @@ h6 {
   bottom: 4.3%;
 }
 
+@-webkit-keyframes shadow {
+  from {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+
+  50% {
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes shadow {
+  from {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+
+  50% {
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
 .icon-menu {
   display: none;
 }
@@ -469,6 +503,12 @@ h6 {
   min-width: 300px;
 }
 
+.item-arrivals:hover .item-arrivals__picture img {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .item-arrivals__picture {
   margin-bottom: 28px;
   max-height: 704px;
@@ -483,12 +523,17 @@ h6 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
 .item-arrivals__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
 
 .item-arrivals__links {
@@ -503,6 +548,8 @@ h6 {
   line-height: 156%;
   letter-spacing: -0.04em;
   color: #191919;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .item-arrivals__title-link:not(:last-child) {
@@ -515,6 +562,8 @@ h6 {
   line-height: 208%;
   letter-spacing: -0.04em;
   color: #7f7f7f;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .item-arrivals__arrow {
@@ -858,5 +907,9 @@ h6 {
 @media (any-hover: hover) {
   .menu__link:hover {
     color: #E6C744;
+  }
+
+  .item-arrivals__title-link:hover {
+    color: #EBD96B;
   }
 }
