@@ -316,6 +316,12 @@
 
 .item-arrivals {
 
+    &:hover {
+        .item-arrivals__picture img {
+            transform: scale(1.05);
+        }
+    }
+
     // .item-arrivals__picture
 
     &__picture {
@@ -329,6 +335,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 0.2s ease;
         }
     }
 
@@ -336,7 +343,7 @@
 
     &__body {
         display: flex;
-        //align-items: center;
+        overflow: hidden;
     }
 
     // .item-arrivals__links
@@ -353,6 +360,13 @@
         line-height: 156%;
         letter-spacing: -0.04em;
         color: #191919;
+        transition: color 0.2s ease;
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: #EBD96B;
+            }
+        }
 
         &:not(:last-child) {
             margin-bottom: 7px;
@@ -371,6 +385,7 @@
         line-height: 208%;
         letter-spacing: -0.04em;
         color: #7f7f7f;
+        transition: color 0.3s ease;
 
         @media (max-width:1240px) {
             font-size: 18px;
