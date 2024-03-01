@@ -36,7 +36,7 @@ function initSliders() {
             // Подключаем модули слайдера
             // для конкретного случая
             modules: [Navigation, Pagination, Parallax, Autoplay],
-            autoHeight: true,
+            //autoHeight: true,
             speed: 600,
             parallax: true,
             grabCursor: true,
