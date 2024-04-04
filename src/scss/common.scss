@@ -27,6 +27,9 @@
 
 // выделения текста
 .rectangle-white {
+    position: relative;
+    z-index: 3;
+
     &::before {
         content: "";
         position: absolute;
@@ -72,6 +75,14 @@
     }
 }
 
+.text-info {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.45;
+    letter-spacing: -0.02em;
+    color: #000;
+}
+
 // Ссылки
 
 
@@ -115,28 +126,7 @@
     height: 6.6%;
     background: url('../img/star.svg') 0 0 no-repeat;
     background-size: contain;
-
-    &__one {
-        top: 9.8%;
-        left: -2.3%;
-    }
-
-    //871
-
-    &__two {
-        top: 14.4%;
-        right: 18%;
-    }
-
-    &__three {
-        right: 0.3%;
-        bottom: 11.7%;
-    }
-
-    &__four {
-        left: 2.6%;
-        bottom: 4.3%;
-    }
+    z-index: 2;
 }
 
 // Прочее
