@@ -973,7 +973,7 @@ h6 {
   align-self: center;
 }
 .payday__picture img {
-  width: 100%;
+  max-width: 100%;
   padding-top: 20px;
 }
 @media (max-width: 47.99875em) {
@@ -1149,6 +1149,12 @@ h6 {
 }
 .favorite__picture img {
   width: 100%;
+  transition: 0.2s ease;
+}
+@media (any-hover: hover) {
+  .favorite__picture:hover img {
+    transform: scale(1.1);
+  }
 }
 .favorite__nav {
   display: flex;
